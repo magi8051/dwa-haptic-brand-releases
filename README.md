@@ -9,6 +9,7 @@
 | --- | --- |
 | `index.html` | 2단계 — Haptic Design Lab 소개 페이지 (랜딩 페이지) |
 | `insert-block.html` | 1단계 — dwanatech.com `/actuator-driver` 페이지용 삽입 블록 |
+| `gallery/` | 데모기 갤러리 (포트폴리오) — 작업 상태는 `gallery/README.md` 참조 |
 
 ## 상태
 

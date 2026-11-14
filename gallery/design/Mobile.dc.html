@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Haptic Design Lab — Mobile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0F14}
+a{color:#F2A33A;text-decoration:none}
+</style>
+</helmet>
+<div style="width:390px;min-height:2600px;box-sizing:border-box;background:#0B0F14;color:#E8ECF1;font-family:'Noto Sans KR','Space Grotesk',system-ui,sans-serif;line-height:1.6">
+
+<div style="padding:18px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1E2631">
+<div style="display:flex;align-items:center;gap:10px">
+<svg width="36" height="24" viewBox="0 0 44 28" aria-hidden="true"><path d="{{logoPath}}" fill="none" stroke="#F2A33A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px">Haptic Design Lab</span>
+</div>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9AA6B2;border:1px solid #2A3442;border-radius:999px;padding:6px 10px">KO / EN</span>
+</div>
+
+<div style="padding:56px 20px 40px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#F2A33A">PORTFOLIO · DRAFT</div>
+<h1 style="margin:16px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:42px;line-height:1.08;letter-spacing:-0.02em">촉감을 설계하는 곳.</h1>
+<p style="margin:20px 0 0;font-size:16px;color:#B4BFCA;font-weight:300">드라이버 IC와 함께 만든 데모와 고객 협업 결과물을 전시합니다.</p>
+<svg viewBox="0 0 350 90" preserveAspectRatio="none" style="margin-top:32px;display:block;width:100%;height:90px" aria-hidden="true"><line x1="0" y1="45" x2="350" y2="45" stroke="#1E2631"/><path d="{{heroPath}}" fill="none" stroke="#F2A33A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<a href="#ex" style="margin-top:28px;display:flex;align-items:center;justify-content:center;min-height:48px;background:#F2A33A;color:#0B0F14;border-radius:999px;font-weight:700;font-size:15px">전시 둘러보기</a>
+</div>
+
+<div id="ex" style="border-top:1px solid #1E2631;padding:48px 20px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#9AA6B2">01 — EXHIBITS</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:30px">전시실</h2>
+<div style="margin:24px -20px 0;padding:0 20px;display:flex;gap:8px;overflow-x:auto">
+<span style="flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:#F2A33A;color:#0B0F14;font-size:14px;font-weight:500">전체</span>
+<span style="flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #3A4656;font-size:14px">Automotive</span>
+<span style="flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #3A4656;font-size:14px">Building</span>
+<span style="flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #3A4656;font-size:14px">PC · Gaming</span>
+</div>
+<div style="margin-top:24px;display:flex;flex-direction:column;gap:16px">
+<sc-for list="{{cards}}" as="ex" hint-placeholder-count="3">
+<div style="background:#121821;border:1px solid #1E2631;border-radius:6px;overflow:hidden">
+<div style="background:#0E141C;height:84px;border-bottom:1px solid #1E2631;padding:0 16px;display:flex;align-items:center">
+<svg viewBox="0 0 240 56" preserveAspectRatio="none" style="width:100%;height:48px" aria-hidden="true"><path d="{{ex.path}}" fill="none" stroke="#F2A33A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#9AA6B2">EXHIBIT {{ex.no}} · {{ex.wing}}</div>
+<div style="font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-size:18px;font-weight:500;line-height:1.3">{{ex.title}}</div>
+<div style="font-size:14px;color:#B4BFCA;font-weight:300">{{ex.feel}}</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
+<sc-for list="{{ex.chips}}" as="c" hint-placeholder-count="2">
+<span style="{{ c.style }}">{{c.t}}</span>
+</sc-for>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="margin-top:20px;font-size:13px;color:#8995A3">… 외 9개 전시</div>
+</div>
+
+<div style="border-top:1px solid #1E2631;background:#0E141C;padding:48px 20px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#9AA6B2">02 — COMMISSIONS</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:30px">의뢰 작업</h2>
+<div style="margin-top:24px;border-top:1px solid #1E2631">
+<div style="padding:22px 0;border-bottom:1px solid #1E2631">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#F2A33A">COMMISSION 01</div>
+<div style="margin-top:6px;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-size:19px;font-weight:500">자동차 부품 제조사 · 일본</div>
+<div style="margin-top:8px;font-size:14px;color:#B4BFCA">ADAS Haptic PAD — 8채널, 좌·우 경고 진동.</div>
+</div>
+<div style="padding:22px 0;border-bottom:1px solid #1E2631">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#F2A33A">COMMISSION 02</div>
+<div style="margin-top:6px;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-size:19px;font-weight:500">엘리베이터 제조사 · 일본</div>
+<div style="margin-top:8px;font-size:14px;color:#B4BFCA">엘리베이터 햅틱 버튼 데모.</div>
+</div>
+</div>
+</div>
+
+<div style="background:#F6F4EF;color:#1A1D21;padding:48px 20px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#5B636B">03 — THE LAB</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:30px;color:#1A1D21">전시 뒤편, 작업대</h2>
+<div style="margin-top:24px;display:flex;flex-direction:column;gap:12px">
+<div style="background:#FFFFFF;border:1px solid #E2DED5;border-radius:6px;padding:18px 20px"><div style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:500">HapTune Studio</div><div style="margin-top:4px;font-size:14px;color:#4A525A">파형을 만들고 조율하는 튜닝 도구.</div></div>
+<div style="background:#FFFFFF;border:1px solid #E2DED5;border-radius:6px;padding:18px 20px"><div style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:500">SAC Board v2.0</div><div style="margin-top:4px;font-size:14px;color:#4A525A">DW7917과 DW7802를 지원하는 평가 보드.</div></div>
+<div style="background:#FFFFFF;border:1px solid #E2DED5;border-radius:6px;padding:18px 20px"><div style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:500">HDL Wiki</div><div style="margin-top:4px;font-size:14px;color:#4A525A">햅틱 디자인 지식을 모은 고객용 위키.</div></div>
+</div>
+</div>
+
+<div style="padding:48px 20px 40px">
+<h2 style="margin:0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:26px;line-height:1.25">당신의 제품에 어떤 촉감이 어울릴까요?</h2>
+<a href="#ex" style="margin-top:24px;display:flex;align-items:center;justify-content:center;min-height:48px;background:#F2A33A;color:#0B0F14;border-radius:999px;font-weight:700;font-size:15px">[CONTACT / 문의 링크]</a>
+<div style="margin-top:40px;padding-top:20px;border-top:1px solid #1E2631;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;color:#8995A3">DONGWOON ANATECH · HAPTIC DESIGN LAB</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2600}}'>
+class Component extends DCLogic {
+  wave(w, h, cycles, decay, amp, steps) {
+    const mid = h / 2;
+    let d = '';
+    for (let i = 0; i <= steps; i++) {
+      const t = i / steps;
+      const y = mid - amp * Math.exp(-decay * t) * Math.sin(2 * Math.PI * cycles * t);
+      d += (i === 0 ? 'M' : 'L') + (t * w).toFixed(1) + ' ' + y.toFixed(1) + ' ';
+    }
+    return d;
+  }
+  renderVals() {
+    const chip = (t, c) => ({ t, style: 'font-family:\'IBM Plex Mono\',monospace;font-size:11px;padding:3px 9px;border-radius:999px;border:1px solid ' + c + ';color:' + c });
+    return {
+      logoPath: this.wave(44, 28, 3, 1.6, 11, 60),
+      heroPath: this.wave(350, 90, 10, 3.2, 38, 300),
+      cards: [
+        { no: '01', wing: 'AUTOMOTIVE', title: 'HVAC 햅틱 컨트롤', feel: '같은 화면, 드라이버만 바꾼 두 가지 촉감.', chips: [chip('DW7917', '#FF8A73'), chip('DW3M120', '#B79BFF')], path: this.wave(240, 56, 5, 2.2, 20, 120) },
+        { no: '02', wing: 'AUTOMOTIVE', title: 'ADAS Haptic PAD', feel: '8채널, 좌·우 경고 진동으로 방향을 전달합니다.', chips: [chip('8CH', '#9AA6B2')], path: this.wave(240, 56, 8, 1.2, 22, 120) },
+        { no: '03', wing: 'AUTOMOTIVE', title: 'OHC 터치·햅틱 통합', feel: '터치한 자리에서 바로 돌아오는 응답.', chips: [chip('DW7914', '#FF8A73')], path: this.wave(240, 56, 4, 3, 22, 120) }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

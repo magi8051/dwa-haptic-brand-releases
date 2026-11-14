@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- PREVIEW ONLY -->
+<meta name="robots" content="noindex,nofollow">
+<!-- /PREVIEW ONLY -->
+<title>Haptic Design Lab — Gallery</title>
+<meta name="description" content="동운아나텍 햅틱 디자인 랩이 드라이버 IC와 함께 만든 데모와 고객 협업 결과물을 전시합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body>
+<a class="skip" href="#exhibits">본문으로 건너뛰기</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span id="logoMark" aria-hidden="true" style="display:inline-flex;width:44px;height:28px"></span>
+      <span class="brand-name"><b>Haptic Design Lab</b><span>DONGWOON ANATECH · <em>DWA</em></span></span>
+    </a>
+    <nav class="nav-links" aria-label="주요 메뉴">
+      <a href="#exhibits">Exhibits</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#lab">The Lab</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">PORTFOLIO · <span id="count">0</span> EXHIBITS</div>
+      <h1>촉감을 설계하는 곳.</h1>
+      <p>동운아나텍 햅틱 디자인 랩이 드라이버 IC와 함께 만들어 온 데모와 고객 협업 결과물을 전시합니다. 모든 작품은 눌러 보고, 느껴 보고, 다시 조율해 만든 결과입니다.</p>
+      <svg id="heroWave" class="hero-wave" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="cta-row">
+        <a class="btn btn-fill" href="#exhibits">전시 둘러보기</a>
+        <a class="btn btn-line" href="#commissions">고객과 만든 작업</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="exhibits">
+    <div class="wrap">
+      <div class="eyebrow">01 — Exhibits</div>
+      <h2>전시실</h2>
+      <p class="lead">전시 번호, 사용한 드라이버 IC, 제작 상태를 캡션으로 달았습니다. 각 작품 위의 파형은 그 작품의 시그니처 진동 모양입니다.</p>
+      <div class="filters" id="filters" role="group" aria-label="전시관 필터"></div>
+      <div class="grid" id="grid"></div>
+      <p class="note">※ 사진·연도 등 확정되지 않은 정보는 확정되는 대로 각 전시에 추가합니다. 전시는 계속 늘어납니다.</p>
+    </div>
+  </section>
+
+  <section class="sec alt" id="commissions">
+    <div class="wrap">
+      <div class="eyebrow">02 — Commissions</div>
+      <h2>의뢰 작업</h2>
+      <p class="lead">고객이 가져온 요구를 촉감으로 풀어낸 작업입니다. 고객사 이름은 산업과 국가로 표기합니다.</p>
+      <div class="rows" id="rows"></div>
+    </div>
+  </section>
+
+  <section class="lab" id="lab">
+    <div class="wrap">
+      <div class="eyebrow">03 — The Lab</div>
+      <h2>전시 뒤편, 작업대</h2>
+      <p class="lead">작품이 나오기까지 랩이 쓰는 도구들입니다. 같은 도구를 고객도 쓸 수 있습니다.</p>
+      <div class="tools" id="tools"></div>
+      <div class="sub">
+        <div class="eyebrow">Driver IC — The Medium</div>
+        <div class="ics" id="ics"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="endcta">
+  <div class="wrap">
+    <h2>당신의 제품에 어떤 촉감이 어울릴까요?</h2>
+    <p>요구를 들려 주시면 랩이 첫 번째 파형을 제안합니다.</p>
+    <div class="cta-row"><a class="btn btn-fill" href="#">[CONTACT / 문의 링크]</a></div>
+    <div class="legal"><span>DONGWOON ANATECH · HAPTIC DESIGN LAB</span><span>[LOGO · SLOGAN PLACEHOLDER]</span></div>
+  </div>
+</footer>
+
+<dialog id="room" class="room" aria-label="전시실"></dialog>
+
+<script src="data/exhibits.js"></script>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

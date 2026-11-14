@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Exhibit 01 — HVAC 햅틱 컨트롤</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0F14}
+a{color:#F2A33A;text-decoration:none}
+a:hover{color:#FFC46B;text-decoration:underline}
+a:focus-visible{outline:2px solid #F2A33A;outline-offset:3px}
+</style>
+</helmet>
+<div style="width:100%;background:#0B0F14;color:#E8ECF1;font-family:'Noto Sans KR','Space Grotesk',system-ui,sans-serif;line-height:1.6">
+
+<div style="border-bottom:1px solid #1E2631">
+<div style="max-width:1200px;margin:0 auto;padding:20px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+<a href="Main.dc.html" style="display:inline-flex;align-items:center;min-height:44px;font-size:14px">← 전시실로 돌아가기</a>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">HAPTIC DESIGN LAB · EXHIBIT 01 / 12</span>
+</div>
+</div>
+
+<!-- TITLE -->
+<div style="max-width:1200px;margin:0 auto;padding:72px 32px 48px;box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#F2A33A">EXHIBIT 01 · AUTOMOTIVE</div>
+<h1 style="margin:16px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:clamp(34px,5.5vw,64px);line-height:1.1;letter-spacing:-0.02em">HVAC 햅틱 컨트롤</h1>
+<p style="margin:20px 0 0;max-width:680px;font-size:18px;color:#B4BFCA;font-weight:300">같은 화면, 같은 GUI. 드라이버만 바꿔 두 가지 촉감을 만들었습니다.</p>
+</div>
+
+<!-- PHOTO + CAPTION -->
+<div style="max-width:1200px;margin:0 auto;padding:0 32px 72px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:32px">
+<div style="flex:999 1 560px;min-width:0">
+<div style="background:#121821;border:1px dashed #3A4656;border-radius:6px;height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;box-sizing:border-box">
+<svg width="56" height="36" viewBox="0 0 56 36" aria-hidden="true"><path d="M2 18 L10 6 L20 30 L30 10 L40 26 L48 14 L54 18" fill="none" stroke="#F2A33A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;color:#F2A33A">[PHOTO · 추가]</div>
+<div style="font-size:14px;color:#9AA6B2;max-width:360px">HVAC 데모기 사진 또는 시연 영상이 들어갈 자리입니다.</div>
+</div>
+</div>
+<div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:0;border-top:1px solid #1E2631">
+<div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #1E2631"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">STATUS</span><span style="font-size:14px">제작 완료 (1·2단계)</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #1E2631"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">DRIVER</span><span style="font-size:14px;text-align:right">DW7917 (LRA) · DW3M120 (Piezo)</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #1E2631"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">PLATFORM</span><span style="font-size:14px;text-align:right">Raspberry Pi 5 · 7" AMOLED</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #1E2631"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">SOFTWARE</span><span style="font-size:14px;text-align:right">Electron GUI · .deb 배포</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #1E2631"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">YEAR</span><span style="font-size:14px;color:#F2A33A">[연도 추가]</span></div>
+</div>
+</div>
+
+<!-- STORY -->
+<div style="background:#0E141C;border-top:1px solid #1E2631;border-bottom:1px solid #1E2631">
+<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#9AA6B2">HOW IT WAS MADE</div>
+<div style="margin-top:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px">
+<div style="border-top:2px solid #F2A33A;padding-top:16px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#F2A33A">01 · BRIEF</div>
+<div style="margin-top:10px;font-size:15px">차량 공조(HVAC) 조작부에 햅틱 피드백을 넣은 데모를 만든다.</div>
+</div>
+<div style="border-top:2px solid #F2A33A;padding-top:16px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#F2A33A">02 · DESIGN</div>
+<div style="margin-top:10px;font-size:15px">공통 GUI를 한 번 만들고, 드라이버 계층만 교체하는 구조로 설계했다.</div>
+</div>
+<div style="border-top:2px solid #F2A33A;padding-top:16px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#F2A33A">03 · TUNING</div>
+<div style="margin-top:10px;font-size:15px">1단계는 DW7917 LRA, 2단계는 DW3M120 Piezo로 각각 파형을 조율했다.</div>
+</div>
+<div style="border-top:2px solid #F2A33A;padding-top:16px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#F2A33A">04 · DELIVERY</div>
+<div style="margin-top:10px;font-size:15px">.deb 패키지로 배포하고, Piezo 구성은 piezo-update로 갱신한다.</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- COMPARE -->
+<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#9AA6B2">SAME GUI · TWO FEELS</div>
+<div style="margin-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+<div style="background:#121821;border:1px solid #1E2631;border-radius:6px;padding:24px">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:500">Stage 1 · LRA</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;padding:3px 9px;border-radius:999px;border:1px solid #FF8A73;color:#FF8A73">DW7917</span></div>
+<svg viewBox="0 0 240 64" preserveAspectRatio="none" style="margin-top:20px;width:100%;height:64px" aria-hidden="true"><path d="{{lraPath}}" fill="none" stroke="#F2A33A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="margin-top:16px;font-size:14px;color:#B4BFCA;font-weight:300">[느낌 설명 추가 — 예: 눌림의 무게감]</div>
+</div>
+<div style="background:#121821;border:1px solid #1E2631;border-radius:6px;padding:24px">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:500">Stage 2 · Piezo</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;padding:3px 9px;border-radius:999px;border:1px solid #B79BFF;color:#B79BFF">DW3M120</span></div>
+<svg viewBox="0 0 240 64" preserveAspectRatio="none" style="margin-top:20px;width:100%;height:64px" aria-hidden="true"><path d="{{piezoPath}}" fill="none" stroke="#F2A33A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="margin-top:16px;font-size:14px;color:#B4BFCA;font-weight:300">[느낌 설명 추가 — 예: 짧고 선명한 질감]</div>
+</div>
+</div>
+<p style="margin:20px 0 0;font-size:13px;color:#8995A3">※ 위 파형은 두 방식의 차이를 보여 주는 개념도입니다. 실제 측정 파형(g Scope)으로 교체할 수 있습니다.</p>
+</div>
+
+<!-- NEXT -->
+<div style="border-top:1px solid #1E2631">
+<div style="max-width:1200px;margin:0 auto;padding:40px 32px 56px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center">
+<a href="Main.dc.html" style="display:inline-flex;align-items:center;min-height:44px;font-size:14px">← 전시실</a>
+<span style="font-size:14px;color:#B4BFCA">다음 전시 <a href="Main.dc.html" style="margin-left:8px">02 · ADAS Haptic PAD →</a></span>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2500}}'>
+class Component extends DCLogic {
+  wave(w, h, cycles, decay, amp, steps) {
+    const mid = h / 2;
+    let d = '';
+    for (let i = 0; i <= steps; i++) {
+      const t = i / steps;
+      const y = mid - amp * Math.exp(-decay * t) * Math.sin(2 * Math.PI * cycles * t);
+      d += (i === 0 ? 'M' : 'L') + (t * w).toFixed(1) + ' ' + y.toFixed(1) + ' ';
+    }
+    return d;
+  }
+  renderVals() {
+    return {
+      lraPath: this.wave(240, 64, 5, 2.2, 26, 140),
+      piezoPath: this.wave(240, 64, 14, 4.5, 26, 240)
+    };
+  }
+}
+</script>
+</body>
+</html>

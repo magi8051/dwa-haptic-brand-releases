@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Haptic Design Lab — Gallery</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0F14}
+a{color:#F2A33A;text-decoration:none}
+a:hover{color:#FFC46B;text-decoration:underline}
+button{font-family:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid #F2A33A;outline-offset:3px}
+@keyframes hdl-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.hdl-wave{stroke-dasharray:1;stroke-dashoffset:0;animation:hdl-draw 2.6s ease-out 1}
+@media (prefers-reduced-motion: reduce){.hdl-wave{animation:none}}
+</style>
+</helmet>
+<div style="width:100%;background:#0B0F14;color:#E8ECF1;font-family:'Noto Sans KR','Space Grotesk',system-ui,sans-serif;line-height:1.6">
+
+<!-- NAV -->
+<div style="border-bottom:1px solid #1E2631">
+<div style="max-width:1200px;margin:0 auto;padding:20px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:14px">
+<svg width="44" height="28" viewBox="0 0 44 28" aria-hidden="true"><path d="{{logoPath}}" fill="none" stroke="#F2A33A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div style="display:flex;flex-direction:column;line-height:1.15">
+<span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.01em">Haptic Design Lab</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">DONGWOON ANATECH · <span style="color:#F2A33A">DWA</span></span>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;font-size:14px">
+<a href="#exhibits" style="color:#E8ECF1">Exhibits</a>
+<a href="#commissions" style="color:#E8ECF1">Commissions</a>
+<a href="#lab" style="color:#E8ECF1">The Lab</a>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9AA6B2;border:1px solid #2A3442;border-radius:999px;padding:6px 12px">KO / EN</span>
+</div>
+</div>
+</div>
+
+<!-- HERO -->
+<div style="position:relative;overflow:hidden">
+<div style="max-width:1200px;margin:0 auto;padding:96px 32px 72px;box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#F2A33A;margin-bottom:24px">PORTFOLIO · {{count}} EXHIBITS · DRAFT</div>
+<h1 style="margin:0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:clamp(40px,7vw,88px);line-height:1.04;letter-spacing:-0.02em;max-width:900px">촉감을 설계하는 곳.</h1>
+<p style="margin:28px 0 0;max-width:620px;font-size:18px;color:#B4BFCA;font-weight:300">동운아나텍 햅틱 디자인 랩이 드라이버 IC와 함께 만들어 온 데모와 고객 협업 결과물을 전시합니다. 모든 작품은 눌러 보고, 느껴 보고, 다시 조율해 만든 결과입니다.</p>
+<div style="margin-top:56px;width:100%">
+<svg viewBox="0 0 1200 160" preserveAspectRatio="none" style="display:block;width:100%;height:160px" aria-hidden="true">
+<line x1="0" y1="80" x2="1200" y2="80" stroke="#1E2631" stroke-width="1"/>
+<path class="hdl-wave" pathLength="1" d="{{heroPath}}" fill="none" stroke="#F2A33A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:12px">
+<a href="#exhibits" style="display:inline-flex;align-items:center;min-height:48px;padding:0 28px;background:#F2A33A;color:#0B0F14;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none">전시 둘러보기</a>
+<a href="#commissions" style="display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border:1px solid #3A4656;color:#E8ECF1;border-radius:999px;font-weight:500;font-size:15px;text-decoration:none">고객과 만든 작업</a>
+</div>
+</div>
+</div>
+
+<!-- EXHIBITS -->
+<div id="exhibits" style="border-top:1px solid #1E2631">
+<div style="max-width:1200px;margin:0 auto;padding:88px 32px 96px;box-sizing:border-box">
+<div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;justify-content:space-between">
+<div style="max-width:640px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#9AA6B2">01 — EXHIBITS</div>
+<h2 style="margin:12px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:40px;line-height:1.15;letter-spacing:-0.01em">전시실</h2>
+<p style="margin:16px 0 0;color:#B4BFCA;font-weight:300">전시 번호, 사용한 드라이버 IC, 제작 상태를 캡션으로 달았습니다. 각 작품 위의 파형은 그 작품의 시그니처 진동 모양입니다.</p>
+</div>
+</div>
+
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:10px" role="group" aria-label="전시관 필터">
+<sc-for list="{{wings}}" as="w" hint-placeholder-count="6">
+<button type="button" onClick="{{ w.pick }}" aria-pressed="{{ w.pressed }}" style="{{ w.style }}">{{w.label}}</button>
+</sc-for>
+</div>
+
+<div style="margin-top:36px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px">
+<sc-for list="{{shown}}" as="ex" hint-placeholder-count="12">
+<div style="background:#121821;border:1px solid #1E2631;border-radius:6px;overflow:hidden;display:flex;flex-direction:column">
+<div style="background:#0E141C;height:112px;border-bottom:1px solid #1E2631;padding:0 20px;display:flex;align-items:center">
+<svg viewBox="0 0 240 56" preserveAspectRatio="none" style="width:100%;height:56px" aria-hidden="true"><path d="{{ex.path}}" fill="none" stroke="#F2A33A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<div style="padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">EXHIBIT {{ex.no}} · {{ex.wingName}}</div>
+<div style="font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-size:19px;font-weight:500;line-height:1.3">{{ex.title}}</div>
+<div style="font-size:14px;color:#B4BFCA;font-weight:300">{{ex.feel}}</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
+<sc-for list="{{ex.chips}}" as="c" hint-placeholder-count="2">
+<span style="{{ c.style }}">{{c.t}}</span>
+</sc-for>
+</div>
+<div style="margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+<span style="display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#B4BFCA"><span style="{{ ex.dotStyle }}"></span>{{ex.statusText}}</span>
+<sc-if value="{{ex.room}}" hint-placeholder-val="{{ false }}">
+<a href="Exhibit.dc.html" style="font-size:13px;font-weight:500;min-height:44px;display:inline-flex;align-items:center">전시실 입장 →</a>
+</sc-if>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+<p style="margin:28px 0 0;font-size:13px;color:#8995A3">※ 초안입니다. 사진, 연도, 액추에이터 정보는 확정되는 대로 각 캡션에 추가합니다.</p>
+</div>
+</div>
+
+<!-- COMMISSIONS -->
+<div id="commissions" style="border-top:1px solid #1E2631;background:#0E141C">
+<div style="max-width:1200px;margin:0 auto;padding:88px 32px 96px;box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#9AA6B2">02 — COMMISSIONS</div>
+<h2 style="margin:12px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:40px;line-height:1.15;letter-spacing:-0.01em">의뢰 작업</h2>
+<p style="margin:16px 0 0;max-width:640px;color:#B4BFCA;font-weight:300">고객이 가져온 요구를 촉감으로 풀어낸 작업입니다. 고객사 이름은 공개 여부가 확정되기 전까지 산업과 국가로 표기합니다.</p>
+
+<div style="margin-top:48px;display:flex;flex-direction:column;border-top:1px solid #1E2631">
+<sc-for list="{{commissions}}" as="cm" hint-placeholder-count="3">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 40px;padding:32px 0;border-bottom:1px solid #1E2631">
+<div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#F2A33A">{{cm.no}}</div>
+<div style="margin-top:8px;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-size:22px;font-weight:500;line-height:1.3">{{cm.client}}</div>
+<div style="margin-top:4px;font-size:13px;color:#9AA6B2">{{cm.where}}</div>
+</div>
+<div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">BRIEF</div>
+<div style="margin-top:8px;font-size:15px;color:#E8ECF1">{{cm.brief}}</div>
+</div>
+<div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#9AA6B2">DELIVERED</div>
+<div style="margin-top:8px;font-size:15px;color:#E8ECF1">{{cm.delivered}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<!-- THE LAB (light) -->
+<div id="lab" style="background:#F6F4EF;color:#1A1D21">
+<div style="max-width:1200px;margin:0 auto;padding:96px 32px;box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#5B636B">03 — THE LAB</div>
+<h2 style="margin:12px 0 0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:40px;line-height:1.15;letter-spacing:-0.01em;color:#1A1D21">전시 뒤편, 작업대</h2>
+<p style="margin:16px 0 0;max-width:640px;color:#4A525A;font-weight:300">작품이 나오기까지 랩이 쓰는 도구들입니다. 같은 도구를 고객도 쓸 수 있습니다.</p>
+
+<div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+<sc-for list="{{tools}}" as="t" hint-placeholder-count="4">
+<div style="background:#FFFFFF;border:1px solid #E2DED5;border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#5B636B">{{t.tag}}</div>
+<div style="font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-size:20px;font-weight:500;color:#1A1D21">{{t.name}}</div>
+<div style="font-size:14px;color:#4A525A">{{t.desc}}</div>
+</div>
+</sc-for>
+</div>
+
+<div style="margin-top:72px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#5B636B">DRIVER IC — THE MEDIUM</div>
+<div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<sc-for list="{{ics}}" as="ic" hint-placeholder-count="6">
+<div style="{{ ic.style }}">
+<div style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700">{{ic.name}}</div>
+<div style="margin-top:4px;font-size:13px;color:#4A525A">{{ic.note}}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FOOTER / CTA -->
+<div style="background:#0B0F14;border-top:1px solid #1E2631">
+<div style="max-width:1200px;margin:0 auto;padding:80px 32px 56px;box-sizing:border-box">
+<h2 style="margin:0;font-family:'Space Grotesk','Noto Sans KR',sans-serif;font-weight:500;font-size:36px;line-height:1.2;max-width:720px">당신의 제품에 어떤 촉감이 어울릴까요?</h2>
+<p style="margin:16px 0 0;color:#B4BFCA;font-weight:300">요구를 들려 주시면 랩이 첫 번째 파형을 제안합니다.</p>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+<a href="#exhibits" style="display:inline-flex;align-items:center;min-height:48px;padding:0 28px;background:#F2A33A;color:#0B0F14;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none">[CONTACT / 문의 링크]</a>
+</div>
+<div style="margin-top:64px;padding-top:24px;border-top:1px solid #1E2631;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#8995A3">
+<span>DONGWOON ANATECH · HAPTIC DESIGN LAB</span>
+<span>[LOGO · SLOGAN PLACEHOLDER]</span>
+</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { wing: 'all' };
+  }
+
+  wave(w, h, cycles, decay, amp, steps) {
+    const mid = h / 2;
+    let d = '';
+    for (let i = 0; i <= steps; i++) {
+      const x = (i / steps) * w;
+      const t = i / steps;
+      const y = mid - amp * Math.exp(-decay * t) * Math.sin(2 * Math.PI * cycles * t);
+      d += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ' ' + y.toFixed(1) + ' ';
+    }
+    return d;
+  }
+
+  renderVals() {
+    const IC = {
+      '7802': '#6AA8FF', '7912': '#3CC9B0', '7914': '#FF8A73', '7917': '#FF8A73', '3M120': '#B79BFF',
+      '7601': '#E8ECF1', 'etc': '#9AA6B2'
+    };
+    const chip = (t, k) => ({
+      t,
+      style: 'font-family:\'IBM Plex Mono\',monospace;font-size:11px;letter-spacing:0.04em;padding:3px 9px;border-radius:999px;border:1px solid ' + IC[k] + ';color:' + IC[k]
+    });
+    const wingNames = { auto: 'AUTOMOTIVE', bld: 'BUILDING', pc: 'PC · GAMING', fit: 'FITNESS · WEARABLE', plat: 'PLATFORM' };
+
+    const data = [
+      { w: 'auto', title: 'HVAC 햅틱 컨트롤', feel: '같은 화면, 드라이버만 바꾼 두 가지 촉감: LRA와 Piezo.', chips: [chip('DW7917', '7917'), chip('DW3M120', '3M120')], done: true, room: true, c: 5, d: 2.2, a: 20 },
+      { w: 'auto', title: 'ADAS Haptic PAD', feel: '8채널, 좌·우 경고 진동으로 방향을 전달합니다.', chips: [chip('8CH', 'etc')], done: true, c: 8, d: 1.2, a: 22 },
+      { w: 'auto', title: 'OHC 터치·햅틱 통합', feel: '터치한 자리에서 바로 돌아오는 응답.', chips: [chip('DW7914', '7914')], done: true, c: 4, d: 3, a: 22 },
+      { w: 'bld', title: '엘리베이터 햅틱 버튼', feel: '눌렀다는 확신을 버튼 안에서 만듭니다.', chips: [chip('DW791x', '7914')], done: true, c: 3, d: 3.4, a: 24 },
+      { w: 'bld', title: '압력 감지 햅틱 버튼', feel: '누르는 힘을 읽고, 힘에 맞춰 돌려줍니다.', chips: [chip('FSR + Haptic', 'etc')], done: true, c: 6, d: 2.6, a: 18 },
+      { w: 'pc', title: '하이브리드 햅틱 마우스', feel: '두 드라이버를 조합한 클릭과 진동.', chips: [chip('DW7917', '7917'), chip('DW7802', '7802')], done: true, c: 7, d: 2.8, a: 18 },
+      { w: 'pc', title: '무선 게임 컨트롤러', feel: '손 안에서 전해지는 게임의 질감.', chips: [chip('DW7917', '7917')], done: true, c: 9, d: 1.8, a: 20 },
+      { w: 'pc', title: '풀모션 레이싱 시뮬레이터', feel: '여러 채널이 함께 만드는 차체의 움직임.', chips: [chip('멀티채널', 'etc')], done: true, c: 11, d: 1, a: 22 },
+      { w: 'fit', title: '실내 자전거 햅틱 컨트롤러', feel: '페달링과 함께 전달되는 피드백.', chips: [chip('DWA Haptic', 'etc')], done: true, c: 5, d: 1.6, a: 20 },
+      { w: 'fit', title: '웨어러블 알림 모듈', feel: '손목 위에서 조용히 구분되는 알림.', chips: [chip('DW7601', '7601')], done: false, c: 6, d: 3.2, a: 14 },
+      { w: 'plat', title: '64채널 동시구동 평가보드', feel: '여러 채널을 한 번에 구동해 비교합니다.', chips: [chip('DW7914', '7914')], done: true, c: 12, d: 1.4, a: 20 },
+      { w: 'plat', title: 'Piezo 드라이버 평가 앱', feel: 'Piezo 구동을 바로 확인하는 평가 도구.', chips: [chip('Piezo Driver', '3M120')], done: true, c: 10, d: 2, a: 16 }
+    ];
+    const all = data.map((e, i) => ({
+      no: String(i + 1).padStart(2, '0'),
+      wingName: wingNames[e.w],
+      w: e.w,
+      title: e.title,
+      feel: e.feel,
+      chips: e.chips,
+      room: !!e.room,
+      path: this.wave(240, 56, e.c, e.d, e.a, 120),
+      statusText: e.done ? '제작 완료' : '진행 중',
+      dotStyle: 'width:8px;height:8px;border-radius:50%;display:inline-block;' + (e.done ? 'background:#3CC9B0' : 'background:transparent;border:2px solid #F2A33A;box-sizing:border-box')
+    }));
+
+    const wingDefs = [
+      ['all', '전체'], ['auto', 'Automotive'], ['bld', 'Building'], ['pc', 'PC · Gaming'], ['fit', 'Fitness · Wearable'], ['plat', 'Platform']
+    ];
+    const cur = this.state.wing;
+    const wings = wingDefs.map(([k, label]) => {
+      const on = cur === k;
+      return {
+        label,
+        pressed: on,
+        pick: () => this.setState({ wing: k }),
+        style: 'min-height:44px;padding:0 20px;border-radius:999px;cursor:pointer;font-size:14px;font-weight:500;' +
+          (on ? 'background:#F2A33A;color:#0B0F14;border:1px solid #F2A33A' : 'background:transparent;color:#E8ECF1;border:1px solid #3A4656')
+      };
+    });
+
+    const shown = cur === 'all' ? all : all.filter((e) => e.w === cur);
+
+    const commissions = [
+      { no: 'COMMISSION 01', client: '자동차 부품 제조사', where: '일본', brief: '운전 중 방향을 즉시 알려 주는 경고 인터페이스.', delivered: 'ADAS Haptic PAD — 8채널, 좌·우 경고 진동.' },
+      { no: 'COMMISSION 02', client: '엘리베이터 제조사', where: '일본', brief: '승강기 버튼에 쓰일 햅틱 버튼.', delivered: '엘리베이터 햅틱 버튼 데모.' },
+      { no: 'COMMISSION 03', client: '완성차 업체', where: '[국가 확인 필요]', brief: '천장(OHC) 터치 패널의 햅틱 통합.', delivered: 'OHC 터치·햅틱 통합 데모.' }
+    ];
+
+    const tools = [
+      { tag: 'TUNING', name: 'HapTune Studio', desc: '파형을 만들고 SAC Board로 바로 확인하며 조율하는 튜닝 도구.' },
+      { tag: 'HARDWARE', name: 'SAC Board v2.0', desc: 'DW7917과 DW7802를 지원하는 평가 보드.' },
+      { tag: 'KNOWLEDGE', name: 'HDL Wiki', desc: '햅틱 디자인 지식과 드라이버 정보를 모은 고객용 위키.' },
+      { tag: 'AUTOMATION', name: 'AutoTune · g Scope', desc: '자동 튜닝과 가속도 측정으로 결과를 확인하는 벤치.' }
+    ];
+
+    const icCard = (name, note, fg, bd) => ({ name, note, style: 'background:#FFFFFF;border:1px solid #E2DED5;border-top:4px solid ' + bd + ';border-radius:6px;padding:18px 20px;color:' + fg });
+    const ics = [
+      icCard('DW7601', '웨어러블', '#1A1D21', '#8B9096'),
+      icCard('DW7802', 'SAC Board 지원', '#1A1D21', '#1F5FBF'),
+      icCard('DW7912', '', '#1A1D21', '#0B7A69'),
+      icCard('DW7914', '', '#1A1D21', '#C2452B'),
+      icCard('DW7917', '플래그십 · I2C 0x59', '#1A1D21', '#C2452B'),
+      icCard('DW3M120', '고전압 Piezo 드라이버', '#1A1D21', '#6B46C1')
+    ];
+
+    return {
+      logoPath: this.wave(44, 28, 3, 1.6, 11, 60),
+      heroPath: this.wave(1200, 160, 14, 3.2, 70, 480),
+      count: all.length,
+      wings, shown, commissions, tools, ics
+    };
+  }
+}
+</script>
+</body>
+</html>
